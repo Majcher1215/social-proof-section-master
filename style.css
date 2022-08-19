@@ -79,6 +79,7 @@ section .opinions {
     color: var(--white);
     text-align: justify;
     font-size: 1.05em;
+    line-height: 1.5em;
 }
 
 figure {
@@ -166,11 +167,12 @@ figure img {
     }
 
     section .opinion {
-        height: 70%;
+        height: 65%;
     }
 
     section .opinion p {
-        margin-right: 4em;
+        font-size: 0.9em;
+        margin-right: 3em;
     }
 
     section .opinion:nth-child(2) {
