@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*  {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    /* Primary Colors */
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    /* Neutral Colors */
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%)
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--white);
+    z-index: 1;
+}
+
+.reviews h1 {
+    color: var(--veryDarkMagenta);
+    font-size: 2em;
+    margin: 2em 2em 0 2em;
+}
+
+.reviews p {
+    color: var(--veryDarkMagenta);
+    margin: 2em 2em 0 2em;
+}
+
+.stars article {
+    width: 100%;
+    background-color: var(--lightGrayishMagenta);
+    color: var(--veryDarkMagenta);
+    font-size: 0.65em;
+    margin: 4em 0 0.5em 0;
+    border-radius: 0.75em;
+    padding: 1em;
+}
+
+.stars article > * {
+    margin: 0.25em;
+}
+
+section .opinions {
+    margin-top: 3em;
+}
+
+.opinion {
+    width: 100%;
+    background-color: var(--veryDarkMagenta);
+    border-radius: 0.75em;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    margin-bottom: 1.25em;
+}
+
+
+.opinion p {
+    color: var(--white);
+    text-align: justify;
+    font-size: 1.05em;
+}
+
+figure {
+    display: flex;
+    margin: 2em;
+}
+
+figure img {
+    width: 3em;
+    border-radius: 3em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper #name, .wrapper #status {
+    margin: 0 0 0.01em 1em;
+}
+
+#name {
+    color: var(--white);
+}
+
+#status {
+    font-size: 0.95em;
+    color: var(--softPink);
+}
+
+
+/* Desktop and Large */
+@media (min-width: 1000px) {
+    .reviews {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 3em;
+    }
+
+    .start {
+        width: 40%;
+        font-size: 1.5em;
+        text-align: justify;
+    }
+
+    .start p {
+        font-size: 0.7em;
+        margin-left: 5.75em;
+    }
+
+    .stars {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stars article {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10em;
+    }
+
+    .stars article h2 {
+        margin-left: 1.5em;
+    }
+
+    .stars article:nth-child(2) {
+        margin: 1em 0 1em 10em;
+    }
+
+    .stars article:nth-child(3) {
+        margin: 1em 0 1em 20em;
+    }
+
+    section .opinions {
+        display: flex;
+        width: 80.5%;
+        flex-direction: row;
+        margin: 0 0 0 6em;
+    }
+
+    section .opinion {
+        height: 70%;
+    }
+
+    section .opinion p {
+        margin-right: 4em;
+    }
+
+    section .opinion:nth-child(2) {
+        margin: 2em 2em;
+    }
+
+    section .opinion:nth-child(3) {
+        margin-top: 4em;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
